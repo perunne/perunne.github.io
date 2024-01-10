@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>UCL, Department of Linguistics</a>, mika dot bradley dot 22 at ucl dot ac dot uk
+subtitle: <a href='#'>UCL, Department of Linguistics</a>, mika.bradley.22@ucl.ac.uk
 
 profile:
   align: right
