@@ -23,4 +23,5 @@ Below is the current schedule for the semester, to be updated once I have some m
 | TBD      | 2024-??-?? | Information Theory                                           |                                                                        |           |                                                                             |
 | TBD      | 2024-??-?? |                                                                |                                                                        |           |                                                                             |
 
-For any other suggestions or if you'd like to present, please e-mail me at mika.bradley.22@ucl.ac.uk!
+
+For any paper suggestions or if you'd like to present, please e-mail me at mika.bradley.22@ucl.ac.uk!
