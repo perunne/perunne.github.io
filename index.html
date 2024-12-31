@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mika's website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #eed7f2;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f6eafc;
+            border-bottom: 1px solid #ddd;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #663399;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .sidebar {
+            flex: 1;
+            max-width: 300px;
+            padding: 15px;
+            background-color: #f8e6fc;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #d4c2e6;
+            color: #333;
+            text-decoration: none;
+            /* border-radius: 5px; */
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #c2aad6;
+        }
+        .content {
+            flex: 3;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #663399;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f6eafc;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mika Bradley</h1>
+        <p><strong>Email:</strong> mika.bradley.22@ucl.ac.uk</p>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#about-me">About me</a>
+            <a href="#research-interests">Research Interests</a>
+            <a href="#service-outreach">Service and Outreach</a>
+            <a href="#miscellaneous">Miscellaneous</a>
+            <!-- templates for more */ -->
+            <!-- <a href="#submission">Submission</a> -->
+            <!-- <a href="#important-dates">Important Dates</a> -->
+        </div>
+
+        <div class="content">
+            <div class="section", id="about-the-website">
+                <h2>About the website</h2>
+                <p>This is a (permanently) work in progress website!
+                    In the mean time, please enjoy this picture of one of my favorite cats, the manul:
+                </p>
+                <a title="Henry Söderlund, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg"><img width="512" alt="Otocolobus manul by Henry Söderlund" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg/512px-Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg?20231031201201"></a>
+            </div>
+
+            <div class="section", id="about-me">
+                <h2>About me</h2>
+                <p>I'm Mika Bradley, currently a final year undergraduate student in Experimental Linguistics at University College London.</p>
+                <p>I'm mostly interested in Formal and Computational Semantics & Pragmatics, especially that of Countability, Measurement and Degrees.</p>
+                <p>I'm currently writing a thesis supervised by <a href="https://www.ucl.ac.uk/~ucjtudo/">Yasu Sudo</a>.</p>
+
+            </div>
+
+            <div class="section" id="research-interests">
+                <h2>Research Interests</h2>
+                <p><strong>Broad:</strong> Formal Semantics & Pragmatics, Logic, Mathematical Psychology, Philosophy of Language & Linguistics.</p>
+                <p><strong>Narrow:</strong> Semantics & Pragmatics of Countability and Degrees, Algebraic Semantics, Concept and Belief representation in Humans and Machines, Modal & Epistemic Logics, Functional Programming.</p>
+            </div>
+
+            <div class="section" id="service-outreach">
+                <h2>Service and Outreach</h2>
+                <p>This year I'm the Local Chair of the ULAB 2025 conference, to be held this year at UCL! More info at the <a href="https://www.ulab.org.uk/conferences/conferences/48">ULAB website</a>, and on <a href="https://easychair.org/cfp/ULAB2025">the conference EasyChair page</a>.</p>
+            </div>
+
+            <div class="section" id="miscellaneous">
+                <h2>Miscellaneous</h2>
+                <table border="1">
+                    <tr>
+                        <td>favorite logic</td>
+                        <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9c2efd2d8fc1c54bce211e7e539fdf6552793a6" alt="S5 Modal Logic" height="20" title="S5 Modal Logic"></td>
+                    </tr>
+                    <tr>
+                        <td>favorite programming language</td>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="Haskell logo" height="45" title="Haskell">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>favorite album (currently)</td>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Bellcosmos.jpg" alt="Chris Bell - I am the cosmos" height="70" title="Chris Bell - I Am the Cosmos">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>favourite baseball team</td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/en/2/20/Saitama_seibu_lions_emblem.svg" alt="Saitama Seibu Lions logo" height="70" title="Saitama Seibu Lions"></td>
+                    </tr>
+                    <tr>
+                        <td>favourite feallsanachd clip</td>
+                        <td><a href="https://www.youtube.com/watch?v=1BfJV8IHY-U">You know, 'Bayesian' and so forth</a></td>
+                    </tr>
+                    <tr>
+                        <td>actual favorite cats</td>
+                        <td><img src="https://cdn.discordapp.com/attachments/595674675661635637/1323719528403959889/IMG20240527134620.jpg?ex=67758961&is=677437e1&hm=b269589900f93e9c8ad0db834b1152a3e27a8c05676f6a32c4b36901934293ab&" alt="My cats, Emmy and Płatek" width="300" title="My cats, Emmy and Płatek"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mika Bradley. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
