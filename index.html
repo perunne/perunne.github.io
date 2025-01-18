@@ -13,19 +13,19 @@
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #eed7f2;
+            background-color: #fffbe8;
             color: #333;
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #f6eafc;
+            background-color: #fff7c9;
             border-bottom: 1px solid #ddd;
         }
         header h1 {
             margin: 0;
             font-size: 24px;
-            color: #663399;
+            color: #993d93;
         }
         .container {
             display: flex;
@@ -38,7 +38,7 @@
             flex: 1;
             max-width: 300px;
             padding: 15px;
-            background-color: #f8e6fc;
+            background-color: #fff7c9;
             border: 1px solid #ccc;
             margin-right: 20px;
         }
@@ -46,70 +46,70 @@
             display: block;
             padding: 10px;
             margin-bottom: 10px;
-            background-color: #d4c2e6;
+            background-color: #fff3ae;
             color: #333;
             text-decoration: none;
-            /* border-radius: 5px; */
             text-align: center;
         }
         .sidebar a:hover {
-            background-color: #c2aad6;
+            background-color: #ffe28c;
         }
         .content {
             flex: 3;
             padding: 15px;
             background-color: #ffffff;
             border: 1px solid #ccc;
+            min-height: 550px; /* Set a minimum height */
+            box-sizing: border-box; /* Ensure padding doesn't increase the size */
         }
         .section {
+            display: none; /* Hide all sections by default */
             margin-bottom: 20px;
+        }
+        .section.active {
+            display: block; /* Show the active section */
         }
         .section h2 {
             margin-top: 0;
-            color: #663399;
+            color: #ca41b5;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #f6eafc;
+            background-color: #fff4b8;
             border-top: 1px solid #ddd;
             margin-top: 20px;
         }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    table, th, td {
-        border: 1px solid #ddd;
-    }
-    th, td {
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders don't double up */
+            border: 2px solid #6b636a; /* Set a thicker, colored outer border */
+            }
+
+        th, td {
+            border: 1px dashed #6b636a; /* Customize cell borders */
+            padding: 8px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mika Bradley</h1>
         <p><strong>Email:</strong> mika.bradley.22@ucl.ac.uk</p>
+        <p></p>
     </header>
 
     <div class="container">
         <div class="sidebar">
-            <a href="#about-me">About me</a>
-            <a href="#research-interests">Research Interests</a>
-            <a href="#service-outreach">Service and Outreach</a>
-            <a href="#miscellaneous">Miscellaneous</a>
-            <!-- templates for more */ -->
-            <!-- <a href="#submission">Submission</a> -->
-            <!-- <a href="#important-dates">Important Dates</a> -->
+            <a href="#about-the-website" onclick="showSection(event, 'about-the-website')">About the website</a>
+            <a href="#about-me" onclick="showSection(event, 'about-me')">About me</a>
+            <a href="#service-outreach" onclick="showSection(event, 'service-outreach')">Service and Outreach</a>
+            <a href="#miscellaneous" onclick="showSection(event, 'miscellaneous')">Miscellaneous</a>
         </div>
 
         <div class="content">
-            <div class="section", id="about-the-website">
+            <div class="section active" id="about-the-website">
                 <h2>About the website</h2>
                 <p>This is a (permanently) work in progress website!
                     In the mean time, please enjoy this picture of one of my favorite cats, the manul:
@@ -117,15 +117,12 @@
                 <a title="Henry Söderlund, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg"><img width="512" alt="Otocolobus manul by Henry Söderlund" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg/512px-Otocolobus_manul_by_Henry_S%C3%B6derlund.jpg?20231031201201"></a>
             </div>
 
-            <div class="section", id="about-me">
+            <div class="section" id="about-me">
                 <h2>About me</h2>
                 <p>I'm Mika Bradley, currently a final year undergraduate student in Experimental Linguistics at University College London.</p>
                 <p>I'm mostly interested in Formal and Computational Semantics & Pragmatics, especially that of Countability, Measurement and Degrees.</p>
                 <p>I'm currently writing a thesis supervised by <a href="https://www.ucl.ac.uk/~ucjtudo/">Yasu Sudo</a>.</p>
 
-            </div>
-
-            <div class="section" id="research-interests">
                 <h2>Research Interests</h2>
                 <p><strong>Broad:</strong> Formal Semantics & Pragmatics, Logic, Mathematical Psychology, Philosophy of Language & Linguistics.</p>
                 <p><strong>Narrow:</strong> Semantics & Pragmatics of Countability and Degrees, Algebraic Semantics, Concept and Belief representation in Humans and Machines, Modal & Epistemic Logics, Functional Programming.</p>
@@ -165,16 +162,25 @@
                     </tr>
                     <tr>
                         <td>actual favorite cats</td>
-                        <td><img src="https://cdn.discordapp.com/attachments/595674675661635637/1323719528403959889/IMG20240527134620.jpg?ex=67758961&is=677437e1&hm=b269589900f93e9c8ad0db834b1152a3e27a8c05676f6a32c4b36901934293ab&" alt="My cats, Emmy and Płatek" width="300" title="My cats, Emmy and Płatek"></td>
+                        <td><img src="https://i.imgur.com/tiJu379.jpeg" alt="My cats, Emmy and Płatek" width="300" title="My cats, Emmy and Płatek"></td>
                     </tr>
                 </table>
             </div>
         </div>
-
     </div>
 
     <footer>
         <p>&copy; 2024 Mika Bradley. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function showSection(event, sectionId) {
+            event.preventDefault();
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+        }
+    </script>
 </body>
 </html>
