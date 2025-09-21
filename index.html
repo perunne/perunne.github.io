@@ -13,19 +13,19 @@
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #fffbe8;
-            color: #333;
+            background-color: #eaf7ea; /* soft green background */
+            color: #111; /* mostly black text */
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #fff7c9;
-            border-bottom: 1px solid #ddd;
+            background-color: #d6efd6; /* slightly darker soft green */
+            border-bottom: 1px solid #bbb;
         }
         header h1 {
             margin: 0;
             font-size: 24px;
-            color: #993d93;
+            color: #225522; /* deep green accent */
         }
         .container {
             display: flex;
@@ -38,78 +38,75 @@
             flex: 1;
             max-width: 300px;
             padding: 15px;
-            background-color: #fff7c9;
-            border: 1px solid #ccc;
+            background-color: #d6efd6; /* soft green */
+            border: 1px solid #aaa;
             margin-right: 20px;
         }
         .sidebar a {
             display: block;
             padding: 10px;
             margin-bottom: 10px;
-            background-color: #fff3ae;
-            color: #333;
+            background-color: #c1e8c1; /* green highlight */
+            color: #111;
             text-decoration: none;
             text-align: center;
         }
         .sidebar a:hover {
-            background-color: #ffe28c;
+            background-color: #a9dba9; /* darker hover green */
         }
         .content {
             flex: 3;
             padding: 15px;
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            min-height: 550px; /* Set a minimum height */
-            box-sizing: border-box; /* Ensure padding doesn't increase the size */
+            background-color: #ffffff; /* keep content readable */
+            border: 1px solid #aaa;
+            min-height: 550px; 
+            box-sizing: border-box; 
         }
         .section {
-            display: none; /* Hide all sections by default */
+            display: none;
             margin-bottom: 20px;
         }
         .section.active {
-            display: block; /* Show the active section */
+            display: block;
         }
         .section h2 {
             margin-top: 0;
-            color: #ca41b5;
+            color: #225522; /* deep green headers */
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #fff4b8;
-            border-top: 1px solid #ddd;
+            background-color: #d6efd6; /* footer soft green */
+            border-top: 1px solid #bbb;
             margin-top: 20px;
         }
         table {
             width: 100%;
-            border-collapse: collapse; /* Ensures borders don't double up */
-            border: 2px solid #6b636a; /* Set a thicker, colored outer border */
-            }
-
+            border-collapse: collapse;
+            border: 2px solid #444; 
+        }
         th, td {
-            border: 1px dashed #6b636a; /* Customize cell borders */
+            border: 1px dashed #444;
             padding: 8px;
             text-align: left;
         }
         img {
-              max-width: 100%;
-              height: auto;
-            }
-            table {
-              overflow-x: auto;
-              display: block;
-            }
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            overflow-x: auto;
+            display: block;
+        }
         @media (max-width: 768px) {
           .container {
             flex-direction: column;
           }
-
           .sidebar {
             max-width: 100%;
             margin-right: 0;
             margin-bottom: 20px;
           }
-
           .content {
             flex: none;
             width: 100%;
@@ -136,7 +133,7 @@
                 <p>I'm Mika Bradley, an MPhil Student in Linguistics at University College London.</p>
                 <p>I'm interested primarily in Formal Semantics, as well as its interfaces with Syntax and Pragmatics. I'm especially interested in the Syntax and Lexical Semantics of Countability, Number and Individuation.</p>
                 <p>Some of the languages I enjoy drawing data from are English, Japanese, German, Singlish and Malay.</p>
-                <p>I wrote my Bachelor's thesis <a href="https://www.ucl.ac.uk/~ucjtudo/">Yasu Sudo</a> on something I call 'quasi-countability', a phenomenon which I'd like to some day write an accessible introduction to. For now though, feel free to read my <a href="docs/thesis_abstract.pdf" target="_blank">abstract</a>.</p>
+                <p>I wrote my Bachelor's thesis <a href="https://www.ucl.ac.uk/~ucjtudo/">Yasu Sudo</a> on something I call 'quasi-countability', a phenomenon which I'll eventually write an accessible introduction to. For now though, feel free to read my <a href="docs/thesis_abstract.pdf" target="_blank">abstract</a>.</p>
 
                 <h2>Research Interests</h2>
                 <p><strong>Broad:</strong> Formal Semantics & Pragmatics, Logic, Computational Linguistics.</p>
